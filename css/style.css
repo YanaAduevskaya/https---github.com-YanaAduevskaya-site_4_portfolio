@@ -32,7 +32,7 @@ button:hover {
     padding: 0 112px;
 }
 .navbar {
-    padding: 55px 0 51px 0;
+    padding: 54px 0 51px 0;
 }
 .navbar__flex {
     display: flex;
@@ -75,9 +75,10 @@ button:hover {
     color: #000;
     font-size: 24px;
     font-weight: 400;
-    padding: 17px 57px;
+    padding: 17px 57px 17px 55px;
     background-color: #fff;
     white-space: nowrap;
+    letter-spacing: 1.3px;
 }
 .sidenav-trigger {
     display: none;
@@ -124,6 +125,7 @@ button:hover {
     font-weight: 400;
     padding: 32px 118px;
     white-space: nowrap;
+    letter-spacing: 2.5px;
 }
 .skills {
     padding: 50px 0 152px 0;
@@ -133,7 +135,7 @@ button:hover {
     font-size: 48px;
     font-weight: 600;
     line-height: 80px;
-    margin: 0 0 96px 0;
+    margin: 0 0 97px 0;
     text-align: center;
 }
 .skills__grid {
@@ -230,13 +232,13 @@ button:hover {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    margin: 0 0 31px 0;
+    margin: 0 0 33px 0;
 }
 .speaking .skills-p {
     margin: 0 0 37px 0;
 }
 .listening .skills-p {
-    margin: 0 0 26px 0;
+    margin: 0 0 28px 0;
 }
 .skills-btn {
     width: 218px;
@@ -970,6 +972,55 @@ button:hover {
         margin: 23px 422px 0 19px;
     }
 }
+@media screen and (max-width: 980px) {
+    .navbar__flex {
+        justify-content: space-between;
+    }
+    .logo {
+        margin-right: 0px;
+    }
+    .navbar__flex_menu {
+        margin-right: 0;
+    }
+    .header__flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills__grid {
+        grid-template-areas: 
+        "speaking writing"
+        "speaking reading"
+        "listening listening";
+        margin: 10vw;
+    }
+    .speaking {
+        height: 896px;
+    }
+    .listening {
+        margin-left: 20px;
+    }
+    .about_us__flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing__flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_us__flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_line {
+        width: 750px;
+    }
+    .footer__flex {
+        justify-content: space-between;
+    }
+    .footer_logo {
+        margin-right: 0;
+    }
+}
 @media screen and (max-width: 767px) {
     .sidenav {
         width: 429px;
@@ -1033,14 +1084,14 @@ button:hover {
         margin-right: 25px;
     }
     .logo {
-        margin-right: 0;
         margin-left: 26px;
-    }
-    .navbar__flex {
-        justify-content: space-between;
     }
     .header {
         padding-bottom: 55px;
+    }
+    .header__flex {
+        flex-direction: row;
+        align-items: flex-start;
     }
     .header__flex_text {
         width: 337px;
@@ -1079,6 +1130,12 @@ button:hover {
     .skills-h2 {
         font-size: 30px;
         margin: 0 0 35px 0;
+    }
+    .skills__grid {
+        grid-template-areas: 
+        "speaking writing reading"
+        "speaking listening listening";
+        margin: 0;
     }
     .speaking {
         width: 224px;
@@ -1123,6 +1180,7 @@ button:hover {
     .listening {
         width: 462px;
         height: 210px;
+        margin-left: 0;
         position: relative;
     }
     .listening-img {
@@ -1199,6 +1257,8 @@ button:hover {
         padding: 20px 0 50px 0;
     }
     .about_us__flex {
+        flex-direction: row;
+        align-items: flex-start;
         padding-left: 27px;
     }
     .about_us-h2 {
@@ -1240,11 +1300,15 @@ button:hover {
         margin-top: 64px;
     } 
     .pricing {
-        padding: 36px 0 30px 0;
+        padding: 35px 0 30px 0;
     }
     .pricing-h2 {
         font-size: 30px;
         margin: 0 0 18px 0;
+    }
+    .pricing__flex {
+        flex-direction: row;
+        align-items: flex-start;
     }
     .pricing__flex-item:nth-child(1) {
         width: 247px;
@@ -1264,13 +1328,13 @@ button:hover {
     .pricing__flex-item:nth-child(2) .pricing-img {
         width: 219px;
         height: 168px;
-        margin: 11px 0 23px 0;
+        margin: 11px 0 24px 0;
         padding: 0;
     }
     .pricing__flex-item:nth-child(3) .pricing-img {
         width: 210px;
         height: 210px;
-        margin: 3px 0 17px 16px;
+        margin: 3px 0 18px 16px;
     }
     .pricing-h3 {
         font-size: 20px;
@@ -1288,16 +1352,16 @@ button:hover {
     .pricing-p {
         width: 209px;
         font-size: 14px;
-        margin: 0 0 22px 12px;
+        margin: 0 0 23px 12px;
     }
     .pricing__flex-item:nth-child(2) .pricing-p {
         width: 209px;
-        margin: 0 0 44px 44px;
+        margin: 0 0 45px 44px;
     }
     .pricing__flex-item:nth-child(3) .pricing-p {
         width: 223px;
         margin-left: 15px;
-        margin-bottom: 50px;
+        margin-bottom: 51px;
     }
     .pricing-btn {
         margin-left: 11px;
@@ -1324,7 +1388,11 @@ button:hover {
         padding: 6px 0 12px 7px;
     }
     .contact_us {
-        padding: 41px 0 100px 0;
+        padding: 40px 0 100px 0;
+    }
+    .contact_us__flex {
+        flex-direction: row;
+        align-items: flex-start;
     }
     .contact_us-img {
         max-width: 233px;
@@ -1338,7 +1406,7 @@ button:hover {
     }
     .contact_us-p {
         font-size: 14px;
-        margin: 0 0 22px 15px;
+        margin: 0 0 24px 15px;
         max-width: 409px;
     }
     .contact_us_form {
@@ -1363,6 +1431,9 @@ button:hover {
     }
     .footer_line {
         width: 690px;
+    }
+    .footer__flex {
+        justify-content: flex-start;
     }
     .footer_logo {
         margin: 23px 262px 0 25px;
