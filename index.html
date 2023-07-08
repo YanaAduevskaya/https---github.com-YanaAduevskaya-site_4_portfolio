@@ -3,15 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" href="img/logo-icon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Britlex</title>
 </head>
 <body>
+    <!-- Меню интерактивное-->
+    <ul id="slide-out" class="sidenav">
+        <li><a class="sidenav-close" href="#!"><img src="img/close.svg" alt=""></a></li>
+        <li>
+          <div class="background">
+            <img src="img/logo.png">
+          </div>
+        </li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect" href="#!">Home</a></li>
+        <li><a class="waves-effect" href="#!">Skills</a></li>
+        <li><a class="waves-effect" href="#!">About Us</a></li>
+        <li><a class="waves-effect" href="#!">Pricing</a></li>
+        <li><a class="waves-effect" href="#!">Contacts</a></li>
+        <li><button class="sidenav_btn">Let’s Talk</button></li>
+      </ul>
+
     <section class="navbar">
         <div class="container">
             <div class="navbar__flex">
@@ -24,6 +42,9 @@
                     <li class="navbar_menu-item" ><a href="#">Contacts</a></li>
                 </ul>
                 <button class="navbar-btn">Let’s Talk</button>
+                <a class="sidenav-trigger" data-target="slide-out" href="#">
+                    <img class="menu_icon" src="img/menu-icon.svg" alt="menu">
+                </a>
             </div>
         </div>
     </section>
@@ -181,6 +202,7 @@
             </div>
         </div>
     </footer>
-    
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

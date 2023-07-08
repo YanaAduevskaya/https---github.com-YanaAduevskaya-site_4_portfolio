@@ -79,6 +79,9 @@ button:hover {
     background-color: #fff;
     white-space: nowrap;
 }
+.sidenav-trigger {
+    display: none;
+}
 .header {
     padding: 1px 0 53px 0;
 }
@@ -965,5 +968,406 @@ button:hover {
         max-height: 45px;
         padding: 0;
         margin: 23px 422px 0 19px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .sidenav {
+        width: 429px;
+    }
+    .sidenav li a {
+        padding-left: 39px;
+        font-size: 22px;
+        font-weight: 500;
+        color: var(--accent-color);
+    }
+    .sidenav-close {
+        margin: 22px 0 0 335px;
+        max-height: 18px;
+    }
+    .background img {
+        width: 89px;
+        height: 45px;
+        margin-right: 301px;
+        margin-left: 39px;
+    }
+    .sidenav .divider {
+        width: 364px;
+        height: 1px;
+        background-color: #C4C4C4;
+        margin-top: 21px;
+        margin-bottom: 35px;
+        margin-left: 39px;
+    }
+    .sidenav li .waves-effect {
+        line-height: 61px;
+        margin-bottom: 13px;
+    }
+    .sidenav_btn {
+        width: 210px;
+        height: 60px;
+        border-radius: 5px;
+        border: 2px solid var(--accent-color);
+        color: #000;
+        background-color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 39px;
+        margin-top: 56px;
+    }
+    .navbar {
+        padding: 33px 0 21px 0;
+    }
+    .navbar__flex_menu {
+        display: none;
+    }
+    .navbar-btn {
+        display: none;
+    }
+    .sidenav-trigger {
+        display: block;
+        width: 30px;
+        height: 17px;
+        margin-top: 12px;
+        margin-right: 25px;
+    }
+    .logo {
+        margin-right: 0;
+        margin-left: 26px;
+    }
+    .navbar__flex {
+        justify-content: space-between;
+    }
+    .header {
+        padding-bottom: 55px;
+    }
+    .header__flex_text {
+        width: 337px;
+        padding-top: 48px;
+        margin: 0 24px 0 26px;
+    }
+    .header-h1 {
+        font-size: 36px;
+        line-height: 45px;
+        max-width: 300px;
+        margin: 0 0 24px 0;
+    }
+    .header-icon {
+        width: 70px;
+        height: 70px;
+        padding: 0;
+        margin: 68px 48px 0 0;
+    }
+    .header-p {
+        font-size: 16px;
+        width: 337px;
+        margin: 0 0 30px 0;
+    }
+    .header-btn {
+        width: 236px;
+        height: 65px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        padding: 19px 67px;
+    }
+    .header-img {
+        width: 352px;
+        height: 352px;
+        margin-top: 20px;
+    }
+    .skills-h2 {
+        font-size: 30px;
+        margin: 0 0 35px 0;
+    }
+    .speaking {
+        width: 224px;
+        height: 662px;
+        margin: 0 10px 0 27px;
+    }
+    .speaking-img {
+        margin-bottom: 30px;
+    }
+    .sp-img {
+        width: 214px;
+        height: 214px;
+        margin: 32px 0 0 0;
+    }
+    .writing {
+        width: 227px;
+        height: 441px;
+        margin: 0 10px 15px 0;
+    }
+    .writing-img {
+        right: 20px;
+        bottom: 220px;
+    }
+    .wr-img {
+        width: 200px;
+        height: 200px;
+    }
+    .reading {
+        width: 228px;
+        height: 442px;
+        margin-bottom: 15px;
+    }
+    .reading-img {
+        width: 216px;
+        height: 144px;
+        margin: 35px 14px 28px 0;
+    }
+    .re-img {
+        width: 216px;
+        height: 144px;
+    }
+    .listening {
+        width: 462px;
+        height: 210px;
+        position: relative;
+    }
+    .listening-img {
+        margin: 56px;
+    }
+    .li-img {
+        width: 202px;
+        height: 134px;
+    }
+    .speaking .skills__grid_content {
+        max-width: 188px;
+        margin-left: 16px;
+    }
+    .writing .skills__grid_content {
+        margin-top: 213px;
+        max-width: 188px;
+        margin-left: 16px;
+    }
+    .reading .skills__grid_content {
+        max-width: 188px;
+        margin-left: 16px;
+    }
+    .listening .skills__grid_content {
+        max-width: 250px;
+        margin: 22px 0px 0 22px;
+    }
+    .skills-h3 {
+        font-size: 20px;
+        margin: 0 0 14px 0;
+    }
+    .speaking .skills-h3 {
+        margin: 0 0 20px 0;
+    }
+    .reading .skills-h3 {
+        margin: 0 0 15px 0;
+    }
+    .skills-p {
+        font-size: 13px;
+        margin: 0 0 20px 0;
+    }
+    .speaking .skills-p {
+        margin: 0 0 25px 0;
+    }
+    .reading .skills-p {
+        margin: 0 0 25px 0;
+    }
+    .listening .skills-p {
+        position: absolute;
+        width: 266px;
+        margin: 0 0 18px 0;
+    }
+    .skills-btn {
+        width: 178px;
+        height: 50px;
+        font-size: 16px;
+        padding: 16px 43px 14px 40px;
+    }
+    .speaking .skills-btn {
+        width: 178px;
+        height: 50px;;
+        font-size: 16px;
+        padding: 14px 43px;
+    }
+    .reading .skills-btn {
+        padding: 16px 43px 14px 45px;
+    }
+    .listening .skills-btn {
+        width: 178px;
+        height: 50px;
+        padding: 16px 43px 14px 38px;
+        margin-top: 74px;
+    }
+    .about_us {
+        padding: 20px 0 50px 0;
+    }
+    .about_us__flex {
+        padding-left: 27px;
+    }
+    .about_us-h2 {
+        font-size: 30px;
+        line-height: 78px;
+        margin: 0;
+    }
+    .about_us-p {
+        font-size: 14px;
+        margin: 0 0 4px 0;
+        max-width: 321px;
+    }
+    .about_us-h3 {
+        font-size: 22px;
+    }
+    .about_us-item-p {
+        font-size: 13px;
+    }
+    .about_us__flex-items {
+        margin-left: 0px;
+     }
+    .about_us__flex-item {
+        margin-right: 53px;
+        margin-top: 10px; 
+    }
+    .about_us__flex-item:nth-child(1) .about_us-h3 {
+        margin-left: 7px;
+    }
+    .about_us__flex-item:nth-child(2) {
+        margin-right: 45px;
+    }
+    .about_us__flex-item:nth-child(3) .about_us-h3 {
+        line-height: 59px;
+        padding-right: 13px;
+    }
+    .about_us-img {
+        width: 295px;
+        height: 295px;
+        margin-top: 64px;
+    } 
+    .pricing {
+        padding: 36px 0 30px 0;
+    }
+    .pricing-h2 {
+        font-size: 30px;
+        margin: 0 0 18px 0;
+    }
+    .pricing__flex-item:nth-child(1) {
+        width: 247px;
+        margin-left: 13px;
+        margin-right: 0px;
+    }
+    .pricing__flex-item:nth-child(2) {
+        margin-right: 0px;
+        width: 231px;
+    }
+    .pricing-img {
+        width: 197px;
+        height: 197px;
+        margin: 10px 0 22px 0;
+        padding: 0;
+    }
+    .pricing__flex-item:nth-child(2) .pricing-img {
+        width: 219px;
+        height: 168px;
+        margin: 11px 0 23px 0;
+        padding: 0;
+    }
+    .pricing__flex-item:nth-child(3) .pricing-img {
+        width: 210px;
+        height: 210px;
+        margin: 3px 0 17px 16px;
+    }
+    .pricing-h3 {
+        font-size: 20px;
+        line-height: 28px;
+        margin: 0 0 16px 11px;
+    }
+    .pricing__flex-item:nth-child(2) .pricing-h3 {
+        width: 112px;
+        margin: 0 0 14px 45px;
+    }
+    .pricing__flex-item:nth-child(3) .pricing-h3 {
+        width: 94px;
+        margin-bottom: 8px;
+    }
+    .pricing-p {
+        width: 209px;
+        font-size: 14px;
+        margin: 0 0 22px 12px;
+    }
+    .pricing__flex-item:nth-child(2) .pricing-p {
+        width: 209px;
+        margin: 0 0 44px 44px;
+    }
+    .pricing__flex-item:nth-child(3) .pricing-p {
+        width: 223px;
+        margin-left: 15px;
+        margin-bottom: 50px;
+    }
+    .pricing-btn {
+        margin-left: 11px;
+        padding: 5px 24px 0 20px;
+    }
+    .pricing__flex-item:nth-child(2) .pricing-btn {
+        margin-left: 6px;
+        padding: 4px 20px 0 20px;
+    }
+    .pricing__flex-item:nth-child(3) .pricing-btn {
+        margin-left: 15px;
+    }
+    .btn-price {
+        font-size: 22px;
+    }
+    .pricing__flex-item:nth-child(2) .btn-price {
+        margin-right: 6px;
+    }
+    .pricing__flex-item:nth-child(3) .btn-price {
+        letter-spacing: 1px;
+        margin-right: 4px;
+    }
+    .btn-term {
+        padding: 6px 0 12px 7px;
+    }
+    .contact_us {
+        padding: 41px 0 100px 0;
+    }
+    .contact_us-img {
+        max-width: 233px;
+        max-height: 210px;
+        margin: 24px 23px 0 13px;
+    }
+    .contact_us-h2 {
+        font-size: 30px;
+        line-height: 67px;
+        margin: 0 0 0 13px;
+    }
+    .contact_us-p {
+        font-size: 14px;
+        margin: 0 0 22px 15px;
+        max-width: 409px;
+    }
+    .contact_us_form {
+        flex-wrap: nowrap;
+    }
+    .contact_us_form-mail {
+        width: 283px;
+        height: 50px;
+        font-size: 12px;
+        margin-right: 6px;
+        padding: 5px 2px 1px 24px;
+        margin-left: 13px;
+    }
+    .contact_us-btn {
+        width: 145px;
+        height: 50px;
+        font-size: 13px;
+        padding: 15px 38px;
+    }
+    .footer {
+        padding: 6px 0 0 0;
+    }
+    .footer_line {
+        width: 690px;
+    }
+    .footer_logo {
+        margin: 23px 262px 0 25px;
+    }
+    .footer_menu-item {
+        font-size: 13px;
     }
 }
