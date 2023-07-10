@@ -898,6 +898,9 @@ button:hover {
     .header__flex {
         justify-content: flex-start;
     }
+    .header-btn {
+        letter-spacing: 1.5px;
+    }
     .skills__grid {
         gap: 0;
         justify-content: flex-start;
@@ -928,8 +931,8 @@ button:hover {
         padding: 35px 0 100px 0;
     }
     .contact_us-img {
-        max-width: 312px;
-        max-height: 281px;
+        width: 312px;
+        height: 281px;
         margin: 5px 111px 0 0;
     }
     .contact_us-h2 {
@@ -939,7 +942,7 @@ button:hover {
     .contact_us-p {
         font-size: 16px;
         margin: 0 0 31px 0;
-        max-width: 450px;
+        width: 450px;
     }
     .contact_us_form-mail {
         width: 323px;
@@ -1240,7 +1243,7 @@ button:hover {
     }
     .speaking .skills-btn {
         width: 178px;
-        height: 50px;;
+        height: 50px;
         font-size: 16px;
         padding: 14px 43px;
     }
@@ -1395,8 +1398,8 @@ button:hover {
         align-items: flex-start;
     }
     .contact_us-img {
-        max-width: 233px;
-        max-height: 210px;
+        width: 233px;
+        height: 210px;
         margin: 24px 23px 0 13px;
     }
     .contact_us-h2 {
@@ -1407,7 +1410,7 @@ button:hover {
     .contact_us-p {
         font-size: 14px;
         margin: 0 0 24px 15px;
-        max-width: 409px;
+        width: 409px;
     }
     .contact_us_form {
         flex-wrap: nowrap;
@@ -1440,5 +1443,436 @@ button:hover {
     }
     .footer_menu-item {
         font-size: 13px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .container {
+        padding: 0 30px;
+    }
+    .navbar {
+        padding-bottom: 13px;
+    }
+    .logo {
+        margin: 5px 0 0 3px;
+    }
+    .menu_icon {
+        width: 42.353px;
+        height: 24px;
+    }
+    .sidenav-trigger {
+        margin: 17px 32px 0 0;
+    }
+    .sidenav {
+        width: 575px;
+    }
+    .sidenav-close {
+        margin: 53px 0 0 479px;
+        max-height: 18px;
+    }
+    .sidenav li a {
+        font-size: 24px;
+        padding: 2px 32px 0 34px;
+        height: 52px;
+    }
+    .background img {
+        margin: 0;
+        position: absolute;
+        top: 48px;
+        right: 454px;
+    }
+    .sidenav .divider {
+        width: 510px;
+        margin: 66px 0 35px 33px;
+    }
+    .sidenav_btn {
+        width: 330px;
+        height: 70px;
+        font-size: 22px;
+        margin-left: 33px;
+        margin-top: 80px;
+    } 
+    .header {
+        padding-bottom: 98px;
+    }
+    .header__flex {
+        flex-direction: column-reverse;
+    }
+    .header-img {
+        width: 424px;
+        height: 424px;
+        margin: 0 0 0 47px;
+    }
+    .header__flex_text {
+        width: 500px;
+        margin: 0 0 0 6px;
+        padding-top: 15px;
+    }
+    .header-h1 {
+        font-size: 34px;
+        max-width: 500px;
+        margin: 0 0 25px 6px;
+    }
+    .header-h1 br {
+        display: none;
+    }
+    .header-icon {
+        display: none;
+    }
+    .header-p {
+        min-width: 505px;
+        margin: 0 0 35px 0;
+        text-align: center;
+    }
+    .header-btn {
+        width: 305px;
+        height: 75px;
+        margin-left: 98px;
+        padding: 19px 67px 19px 71px;
+    }
+    .skills-h2 {
+        margin: 0 0 35px 10px;
+    }
+    .skills__grid {
+        grid-template-areas: 
+        "speaking writing"
+        "reading listening";
+        margin: 0;
+    }
+    .speaking {
+        width: 240px;
+        height: 534px;
+        margin: 0 30px 34px 3px;
+        position: relative;
+    }
+    .speaking-img {
+        width: 185px;
+        height: 185px;
+        margin-bottom: 5px;
+        position: absolute;
+        right: 57px;
+        bottom: 353px;
+    }
+    .sp-img {
+        width: 185px;
+        height: 185px;
+        margin: 0 0 0 12px;
+    }
+    .writing {
+        width: 240px;
+        height: 534px;
+        margin: 0 0 34px 0;
+    }
+    .writing-img {
+        width: 182px;
+        height: 182px;
+        right: 36px;
+        bottom: 349px;
+    }
+    .wr-img {
+        width: 182px;
+        height: 182px;
+    }
+    .reading {
+        width: 240px;
+        height: 534px;
+        margin: 0 32px 0 3px;
+    }
+    .reading-img {
+        width: 198px;
+        height: 132px;
+        margin: 29px 14px 29px 0;
+    }
+    .re-img {
+        width: 198px;
+        height: 132px;
+    }
+    .listening {
+        width: 240px;
+        height: 534px;
+        margin: 0;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .listening-img {
+        width: 206px;
+        height: 137px;
+        margin: 0;
+        position: absolute;
+        top: 37px;
+        right: 22px;
+    }
+    .li-img {
+        width: 206px;
+        height: 137px;
+    }
+    .speaking .skills__grid_content {
+        max-width: 188px;
+        margin-left: 15px;
+        margin-top: 190px;
+    }
+    .writing .skills__grid_content {
+        margin-top: 196px;
+        max-width: 170px;
+        margin-left: 17px;
+    }
+    .reading .skills__grid_content {
+        max-width: 202px;
+        margin-left: 16px;
+    }
+    .listening .skills__grid_content {
+        height: 338px;
+        margin: 0 0 0 18px;
+    }
+    .skills-h3 {
+        font-size: 18px;
+        margin: 0 0 9px 0;
+    }
+    .speaking .skills-h3 {
+        margin: 0 0 16px 0;
+    }
+    .reading .skills-h3 {
+        margin: 0 0 17px 0;
+    }
+    .listening .skills-h3 {
+        margin: 0 0 12px 2px;
+    }
+    .skills-p {
+        font-size: 12px;
+        margin: 0 0 131px 2px;
+    }
+    .speaking .skills-p {
+        margin: 0 0 24px 0;
+    }
+    .reading .skills-p {
+        font-size: 13px;
+        margin: 0 0 123px 0;
+    }
+    .listening .skills-p {
+        width: 204px;
+        font-size: 13px;
+        margin: 0 0 0 2px;
+    }
+    .skills-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 14px;
+        padding: 14px 43px 16px 26px;
+    }
+    .speaking .skills-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 14px;
+        padding: 5px 53px 10px 42px;
+    }
+    .reading .skills-btn {
+        padding: 14px 43px 19px 31px;
+    }
+    .listening .skills-btn {
+        width: 200px;
+        height: 50px;
+        padding: 12px 43px 15px 29px;
+        margin-top: 219px;
+    }
+    .about_us {
+        padding-top: 84px;
+        padding-bottom: 94px;
+    }
+    .about_us__flex {
+        flex-direction: column;
+        padding: 0;
+        position: relative;
+    }
+    .about_us__flex_content {
+        padding: 0;
+        margin: 0;
+    }
+    .about_us-h2 {
+        margin-left: 189px;
+        margin-bottom: 400px;
+    }
+    .about_us-p {
+        margin: 0 0 15px 4px;
+        max-width: 510px;
+        text-align: center;
+    }
+    .about_us-h3 {
+        font-size: 24px;
+    }
+    .about_us-item-p {
+        font-size: 14px;
+        margin-left: 9px;
+    }
+    .about_us__flex-items {
+        margin-left: 48px;
+     }
+    .about_us__flex-item {
+        margin: 15px 95px 0 0; 
+    }
+    .about_us__flex-item:nth-child(1) .about_us-h3 {
+        line-height: 51px;
+        margin-left: 7px; 
+    }
+    .about_us__flex-item:nth-child(2) .about_us-h3 {
+        line-height: 57px;
+        margin-top: 2px;
+    }
+    .about_us__flex-item:nth-child(2) {
+        margin-right: 67px;
+    }
+    .about_us__flex-item:nth-child(3) .about_us-h3 {
+        padding: 0 0 0 15px;
+    }
+    .about_us-img {
+        width: 352px;
+        height: 352px;
+        margin: 0;
+        position: absolute;
+        right: 80px;
+        bottom: 235px;
+    }
+    .pricing {
+        padding: 35px 0 130px 0;
+    }
+    .pricing-h2 {
+        margin: 0 0 52px 0;
+    }
+    .pricing__flex {
+        flex-direction: column; 
+    }
+    .pricing__flex-item:nth-child(1) {
+        width: 350px;
+        margin-left: 61px;
+    }
+    .pricing__flex-item:nth-child(2) {
+        margin-top: 70px;
+        margin-left: 93px;
+        width: 350px;
+    }
+    .pricing__flex-item:nth-child(3) {
+        margin-top: 70px;
+        margin-left: 70px;
+        width: 350px;
+    }
+    .pricing-img {
+        width: 291px;
+        height: 291px;
+        margin: 0 0 30px 52px;
+        padding: 0;
+    }
+    .pricing__flex-item:nth-child(2) .pricing-img {
+        width: 314px;
+        height: 241px;
+        margin: 0 0 22px 8px;
+        padding: 0;
+    }
+    .pricing__flex-item:nth-child(3) .pricing-img {
+        width: 253px;
+        height: 253px;
+        margin: 0 0 15px 53px;
+    }
+    .pricing-h3 {
+        font-size: 24px;
+        width: 300px;
+        margin: 0 0 23px 48px;
+    }
+    .pricing__flex-item:nth-child(2) .pricing-h3 {
+        width: 279px;
+        margin: 0 0 19px 53px;
+    }
+    .pricing__flex-item:nth-child(3) .pricing-h3 {
+        width: 200px;
+        margin: 0 0 21px 80px;
+    }
+    .pricing-p {
+        width: 390px;
+        margin: 0 0 31px 0;
+        text-align: center;
+    }
+    .pricing__flex-item:nth-child(2) .pricing-p {
+        width: 325px;
+        margin: 0 0 32px 0;
+    }
+    .pricing__flex-item:nth-child(3) .pricing-p {
+        width: 355px;
+        margin-left: 0;
+        margin-bottom: 31px;
+    }
+    .pricing-btn {
+        margin-left: 93px;
+    }
+    .pricing__flex-item:nth-child(2) .pricing-btn {
+        margin-left: 72px;
+        padding: 4px 20px 0 20px;
+    }
+    .pricing__flex-item:nth-child(3) .pricing-btn {
+        margin-left: 78px;
+        padding: 5px 19px 4px 19px;
+    }
+    .contact_us {
+        padding: 40px 0 100px 0;
+    }
+    .contact_us__flex {
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .contact_us-img {
+        width: 358px;
+        height: 322px;
+        margin: 0;
+        position: absolute;
+        top: 156px;
+        right: 72px;  
+    }
+    .contact_us-h2 {
+        width: 350px;
+        margin: 0 0 446px 173px;
+    }
+    .contact_us-p {
+        font-size: 16px;
+        margin: 0 0 58px 13px;
+        width: 490px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .contact_us_form {
+        flex-wrap: nowrap;
+        border-radius: 10px;
+        border: 1px solid var(--text-color);
+        border-right-color: transparent;
+        width: 511px;
+        margin-left: 4px;
+    }
+    .contact_us_form-mail {
+        width: 318px;
+        height: 60px;
+        font-size: 13px;
+        margin: 0;
+        padding: 5px 2px 1px 24px;
+        border: none;
+    }
+    .contact_us-btn {
+        width: 193px;
+        height: 60px;
+        font-size: 16px;
+        padding: 20px 38px 15px 38px;
+    }
+    .footer {
+        padding-top: 43px;
+    }
+    .footer_line {
+        width: 510px;
+    }
+    .footer_logo {
+        margin: 23px 105px 0 2px;
+    }
+    .footer_menu {
+        flex-wrap: nowrap;
+    }
+    .footer_menu-item {
+        font-size: 12px;
+        margin-right: 2px;
+    }
+    .footer_menu-item:last-child {
+        margin-right: 0;
     }
 }
