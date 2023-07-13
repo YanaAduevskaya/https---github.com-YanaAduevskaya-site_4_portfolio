@@ -1005,7 +1005,7 @@ button:hover {
     .header-h1 {
         font-size: 36px;
         line-height: 45px;
-        max-width: 300px;
+        width: 300px;
         margin: 0 0 24px 0;
     }
     .header-icon {
@@ -1801,7 +1801,7 @@ button:hover {
         right: 72px;  
     }
     .contact_us-h2 {
-        width: 350px;
+        width: 300px;
         margin: 0 0 446px 173px;
     }
     .contact_us-p {
@@ -1864,9 +1864,12 @@ button:hover {
         width: 100%;
     }
 }
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 550px) {
     .container {
         padding: 0 10px;
+    }
+    .navbar {
+        padding-top: 35px;
     }
     .navbar__flex {
         justify-content: space-between;
@@ -1880,7 +1883,7 @@ button:hover {
     .logo {
         width: 71px;
         height: 36px;
-        margin: 3px 0 0 4px;
+        margin: 0 0 3px 30px;
     }
     .menu_icon {
         width: 33.529px;
@@ -1890,27 +1893,27 @@ button:hover {
         width: 33.529px;
         height: 19px;
         display: block;
-        margin: 12px 6px 0 0;
+        margin: 12px 30px 0 0;
     }
     .sidenav {
         width: 100%;
     }
     .sidenav-close {
-        margin: 21px 0 0 262px;
+        margin: 21px 0 0 calc(80%);
     }
     .sidenav li a {
         font-size: 22px;
-        padding: 2px 32px 0 14px;
+        padding: 2px 32px 0 20px;
     }
     .background img {
         width: 71px;
         height: 36px;
-        top: 25px;
-        right: 267px;
+        position: static;
+        margin-left: 20px;
     }
     .sidenav .divider {
-        width: 290px;
-        margin: 42px 0 47px 15px;
+        width: calc(100% - 15%);
+        margin: 30px 0 47px 15px;
     }
     .sidenav_btn {
         width: 291px;
@@ -1926,6 +1929,10 @@ button:hover {
         width: 299px;
         height: 299px;
         margin: 15px 0 0 0;
+    }
+    .header__flex {
+       width: calc(100% - 35%);
+       margin: 0 auto;
     }
     .header__flex_text {
         width: 280px;
@@ -1962,6 +1969,8 @@ button:hover {
         "writing"
         "reading"
         "listening";
+        width: calc(100% - 35%);
+        margin: 0 auto;
     }
     .speaking {
         width: 290px;
@@ -2096,6 +2105,10 @@ button:hover {
         padding-top: 51px;
         padding-bottom: 45px;
     }
+    .about_us__flex {
+        width: calc(100% - 35%);
+        margin: 0 auto;
+    }
     .about_us-h2 {
         font-size: 24px;
         margin-left: 95px;
@@ -2163,6 +2176,10 @@ button:hover {
         font-size: 24px;
         margin: 0 0 49px 0;
     }
+    .pricing__flex {
+        width: calc(100% - 35%);
+        margin: 0 auto;
+    }
     .pricing__flex-item:nth-child(1) {
         width: 280px;
         margin: 0 0 65px 16px;
@@ -2173,7 +2190,7 @@ button:hover {
     }
     .pricing__flex-item:nth-child(3) {
         margin: 0 0 0 8px;
-        width: 350px;
+        width: 300px;
     }
     .pricing-img {
         width: 248px;
@@ -2254,6 +2271,10 @@ button:hover {
     .contact_us {
         padding: 41px 0 12px 0;
     }
+    .contact_us__flex {
+        width: calc(100% - 35%);
+        margin: 0 auto;
+    }
     .contact_us-img {
         width: 253px;
         height: 228px;
@@ -2306,6 +2327,8 @@ button:hover {
     }
     .footer__flex {
         flex-direction: column;
+        width: calc(100% - 35%);
+        margin: 0 auto;
     }
     .footer_menu {
         flex-wrap: nowrap;
@@ -2315,4 +2338,50 @@ button:hover {
         font-size: 11px;
         margin-right: 2px;
     }
+}
+@media screen and (max-width: 430px) {
+    .header__flex {
+        width: calc(100% - 15%);
+     }
+    .skills__grid {
+        width: calc(100% - 15%);
+     }
+    .about_us__flex {
+        width: calc(100% - 15%);
+     }
+    .pricing__flex {
+        width: calc(100% - 15%);
+     }
+    .contact_us__flex {
+        width: calc(100% - 15%);
+     }
+    .footer__flex {
+        width: calc(100% - 15%);
+     }
+}
+@media screen and (max-width: 380px) {
+    .header__flex {
+        width: 100%;
+     }
+    .skills__grid {
+        width: 100%;
+     }
+    .about_us__flex {
+        width: 100%;
+     }
+    .pricing__flex {
+        width: 100%;
+     }
+    .contact_us__flex {
+        width: 100%;
+     }
+    .footer__flex {
+        width: 100%;
+     }
+     .logo {
+        margin-left: 4px;
+     }
+     .sidenav-trigger {
+        margin-right: 5px;
+     }
 }
